@@ -107,7 +107,7 @@ public class SinglyLinkedList {
     public static void insertAtPosition(int data, int position, SinglyLinkedList singlyLinkedList) {
         SinglyLinkedList.Node node = singlyLinkedList.new Node(data);
         Node currentNode = singlyLinkedList.getHead();
-        for (int i = 0; i < position; i++) {
+        for (int i = 1; i < position; i++) {
             currentNode = currentNode.getNext();
         }
         node.setNext(currentNode.getNext());
