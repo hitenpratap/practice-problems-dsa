@@ -157,4 +157,8 @@ public class SinglyLinkedList {
         return position;
     }
 
+    public static void clearList(SinglyLinkedList singlyLinkedList) {
+        singlyLinkedList.setHead(null);
+    }
+
 }
