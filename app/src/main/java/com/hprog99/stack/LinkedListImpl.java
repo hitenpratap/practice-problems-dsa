@@ -1,7 +1,5 @@
 package com.hprog99.stack;
 
-import org.w3c.dom.Node;
-
 public class LinkedListImpl {
     private Node head;
     private int length;
