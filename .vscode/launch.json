@@ -6,6 +6,13 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "Launch DynamicArrayImpl",
+			"request": "launch",
+			"mainClass": "com.hprog99.stack.DynamicArrayImpl",
+			"projectName": "app"
+		},
+		{
+			"type": "java",
 			"name": "Launch ArrayImpl",
 			"request": "launch",
 			"mainClass": "com.hprog99.stack.ArrayImpl",
