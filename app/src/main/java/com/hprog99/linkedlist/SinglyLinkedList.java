@@ -61,9 +61,9 @@ public class SinglyLinkedList {
 
         printList(singlyLinkedList.getHead());
 
-        insertAtPosition(101, 4, singlyLinkedList);
+        // insertAtPosition(101, 4, singlyLinkedList);
 
-        printList(singlyLinkedList.getHead());
+        // printList(singlyLinkedList.getHead());
 
         // removeFirst(singlyLinkedList);
 
@@ -73,7 +73,11 @@ public class SinglyLinkedList {
 
         // printList(singlyLinkedList.getHead());
 
-        removeAtPosition(2, singlyLinkedList);
+        // removeAtPosition(2, singlyLinkedList);
+
+        // printList(singlyLinkedList.getHead());
+
+        reversePair(singlyLinkedList);
 
         printList(singlyLinkedList.getHead());
 
@@ -159,6 +163,26 @@ public class SinglyLinkedList {
 
     public static void clearList(SinglyLinkedList singlyLinkedList) {
         singlyLinkedList.setHead(null);
+    }
+
+    public static void reversePair(SinglyLinkedList singlyLinkedList) {
+        Node prev = singlyLinkedList.getHead();
+        Node current = singlyLinkedList.getHead().getNext();
+        Node head = null;
+        while (current != null && current.getNext() != null) {
+            Node next = current.getNext();
+            prev.setNext(next);
+            current.setNext(prev);
+            if (head == null) {
+                head = current;
+                singlyLinkedList.setHead(head);
+            } else {
+                head.setNext(current);
+            }
+            head = prev;
+            prev = next;
+            current = next.getNext();
+        }
     }
 
 }
