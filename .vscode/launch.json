@@ -6,6 +6,13 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "Launch LinkedListQueue",
+			"request": "launch",
+			"mainClass": "com.hprog99.queue.LinkedListQueue",
+			"projectName": "app"
+		},
+		{
+			"type": "java",
 			"name": "Launch DynamicCircularArrayQueue",
 			"request": "launch",
 			"mainClass": "com.hprog99.queue.DynamicCircularArrayQueue",
