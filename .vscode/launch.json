@@ -6,6 +6,27 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "Launch LockCondition",
+			"request": "launch",
+			"mainClass": "com.hprog99.concurrency.LockCondition",
+			"projectName": "app"
+		},
+		{
+			"type": "java",
+			"name": "Launch ReentrantLocks",
+			"request": "launch",
+			"mainClass": "com.hprog99.concurrency.ReentrantLocks",
+			"projectName": "app"
+		},
+		{
+			"type": "java",
+			"name": "Launch SyncClass",
+			"request": "launch",
+			"mainClass": "com.hprog99.concurrency.SyncClass",
+			"projectName": "app"
+		},
+		{
+			"type": "java",
 			"name": "Launch LinkedListQueue",
 			"request": "launch",
 			"mainClass": "com.hprog99.queue.LinkedListQueue",
